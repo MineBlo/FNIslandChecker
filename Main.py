@@ -1,12 +1,6 @@
 import requests
-import os
-import discord
 import time
-import threading
-import asyncio
-import json
 from requests.structures import CaseInsensitiveDict
-from discord import app_commands 
 
 def GetBearer():
     global bearer
