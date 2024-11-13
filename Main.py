@@ -4,7 +4,7 @@ from requests.structures import CaseInsensitiveDict
 
 def GetBearer():
     global bearer
-    bearerresponse = requests.post("https://account-public-service-prod.ol.epicgames.com/account/api/oauth/token", data = {'grant_type': 'device_auth', 'account_id':EpicID, 'device_id': DeviceID, 'secret': Secret}, headers = {"Content-Type": "application/x-www-form-urlencoded","Authorization":"basic MzQ0NmNkNzI2OTRjNGE0NDg1ZDgxYjc3YWRiYjIxNDE6OTIwOWQ0YTVlMjVhNDU3ZmI5YjA3NDg5ZDMxM2I0MWE="}).json()
+    bearerresponse = requests.post("https://account-public-service-prod.ol.epicgames.com/account/api/oauth/token", data = {'grant_type': 'device_auth', 'account_id':EpicID, 'device_id': DeviceID, 'secret': Secret}, headers = {"Content-Type": "application/x-www-form-urlencoded","Authorization":"basic YWY0M2RjNzFkZDkxNDUyMzk2ZmNkZmZiZDdhOGU4YTk6NFlYdlNFQkxGUlBMaDFoekdaQWtmT2k1bXF1cEZvaFo="}).json()
     bearer=bearerresponse['access_token']
     print(bearer)
     return bearer
